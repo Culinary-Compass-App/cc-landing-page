@@ -1,0 +1,122 @@
+/* Import global styles from the main stylesheet */
+@import url("style.css");
+
+/* ------------------------------------------- */
+/* Privacy Page Specific Overrides and Additions */
+/* ------------------------------------------- */
+
+.privacy-content {
+    padding-top: 4rem; /* Adjust top padding for content below header */
+    padding-bottom: 6rem; /* Generous bottom padding */
+    background-color: var(--background-light); /* Ensure light background for readability */
+    color: var(--text-color-dark); /* Dark text for contrast */
+    text-align: left; /* Default text alignment */
+}
+
+.privacy-content h1 {
+    font-size: 3em; /* Larger heading for the main title */
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center; /* Center the main policy title */
+}
+
+.privacy-content h2 {
+    font-size: 2em; /* Headings for sections */
+    color: var(--primary-color); /* Use a brand color for section titles */
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color); /* Subtle underline */
+    padding-bottom: 0.5rem;
+}
+
+.privacy-content h3 {
+    font-size: 1.5em; /* Sub-headings */
+    color: var(--secondary-color);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.privacy-content h4 {
+    font-size: 1.2em; /* Further sub-headings */
+    color: var(--text-color-dark);
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.privacy-content p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 1em;
+    color: var(--text-color-dark-secondary);
+}
+
+.privacy-content ul {
+    list-style: disc;
+    margin-left: 1.5em; /* Indent lists */
+    margin-bottom: 1.5em;
+    color: var(--text-color-dark-secondary);
+}
+
+.privacy-content ul li {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.privacy-content strong {
+    color: var(--secondary-color); /* Highlight strong text */
+}
+
+.privacy-content a {
+    color: var(--primary-color); /* Brand color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.privacy-content a:hover {
+    color: var(--accent-color); /* Accent color on hover */
+    text-decoration: underline;
+}
+
+/* Specific styling for the footer link on the privacy page */
+.footer .active {
+    color: var(--accent-color); /* Highlight active Privacy Policy link */
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness for Privacy Page */
+@media (max-width: 768px) {
+    .privacy-content {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .privacy-content h1 {
+        font-size: 2.5em;
+    }
+    .privacy-content h2 {
+        font-size: 1.8em;
+    }
+    .privacy-content h3 {
+        font-size: 1.3em;
+    }
+    .privacy-content p, .privacy-content ul li {
+        font-size: 0.95em;
+    }
+    .privacy-content ul {
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-content h1 {
+        font-size: 2em;
+    }
+    .privacy-content h2 {
+        font-size: 1.5em;
+    }
+    .privacy-content h3 {
+        font-size: 1.2em;
+    }
+    .privacy-content p, .privacy-content ul li {
+        font-size: 0.9em;
+    }
+}

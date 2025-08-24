@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Culinary Compass's mission to ignite taste discovery through AI-powered menu optimization for food e-commerce platforms. Our vision, API, and technical approach to personalized culinary intelligence.">
+    <title>About Us | Culinary Compass - AI Taste Profile API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css"> <!-- Link to the new about.css -->
+    <!-- Phosphor Icons for Free Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/dist/phosphor.js"></script>
+
+    <!-- Google tag (gtag.js) - Keep if needed for analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17469046361"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17469046361');
+    </script>
+    <!-- reCAPTCHA API Script (included for consistency, even if not directly on this page) -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <!-- Using your provided dark background logo -->
+                <img src="logo1.png" alt="Culinary Compass Logo" class="logo-dark-bg">
+            </div>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav">
+                <a href="index.html#new-reality">The New Reality</a>
+                <a href="index.html#intelligence">The Intelligence You Need</a>
+                <a href="index.html#why-us">Why Us</a>
+                <a href="index.html#proof">The Proof</a>
+                <a href="about.html" class="active">About Us</a> <!-- Removed nav-button class -->
+                <!-- <a href="index.html#request-api" class="nav-button">Request API Key</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-dark about-hero">
+            <div class="container text-center">
+                <p class="tagline">Our Journey</p>
+                <h1>Pioneering the Future of Food Discovery.</h1>
+                <p class="hero-subtext light-text">At Culinary Compass, we're building the intelligence layer that empowers food e-commerce platforms to truly understand and delight every customer.</p>
+            </div>
+        </section>
+
+        <section class="section section-light mission-vision-container">
+            <div class="container mission-vision-grid">
+                <div class="mission-block">
+                    <h2>Our Mission: Ignite Genuine Taste Discovery.</h2>
+                    <p class="leading-paragraph">Culinary Compass exists to <strong>ignite genuine taste discovery across digital food experiences.</strong> We empower food e-commerce platforms to move beyond mere transactions, transforming every order into a deeply personalized culinary journey. This isn't just about selling food; it's about <strong>understanding desire at scale.</strong></p>
+                </div>
+
+                <div class="vision-block">
+                    <h2 class="light-text">Our Vision: The New Culinary Frontier.</h2>
+                    <p class="leading-paragraph light-text">We see a future where every food ordering decision is guided by true understanding, not just convenience. Culinary Compass is architecting a <strong>pioneering monetization and engagement model</strong>, freeing platforms from the limitations of generic recommendations. Our vision is to equip you with the intelligence to <strong>truly know your customers' palates</strong>, driving unparalleled loyalty and igniting new revenue streams without a single banner ad. This is about making your platform indispensable.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="our-api-details" class="section section-light">
+            <div class="container text-center-mobile">
+                <h2>Our API: The Taste Engine for Digital Commerce.</h2>
+                <p class="leading-paragraph">Our core offering is a <strong>plug-and-play API</strong> designed by AI experts for product teams like yours. Forget months of R&D. We provide the invisible intelligence that transforms your platform, instantly.</p>
+                <ul class="api-details-list">
+                    <li><i class="ph ph-fingerprint-simple"></i> <strong>Real-time Taste Profiles:</strong> Dynamic, deep insights into individual customer preferences, beyond clicks and past orders.</li>
+                    <li><i class="ph ph-sparkle"></i> <strong>Hyper-Personalized Recommendations:</strong> Contextual upsells, relevant discoveries, and smart pairings that resonate precisely with what each user truly desires.</li>
+                    <li><i class="ph ph-code-simple"></i> <strong>Effortless Integration:</strong> A robust, developer-friendly solution that gets you to market with sophisticated AI personalization in weeks, not quarters.</li>
+                </ul>
+                <p class="bottom-statement">This is your shortcut to becoming the most intelligent and beloved food destination in the market.</p>
+            </div>
+        </section>
+
+        <section id="join-us-cta" class="section section-dark cta-section">
+            <div class="container">
+                <h2 class="light-text">Ready to Redefine Food Discovery?</h2>
+                <p class="light-text leading-paragraph">Are you ready to truly understand and delight your customers, leaving old monetization models behind?</p>
+                <a href="index.html#request-api" class="btn">Request Your API Key</a>
+            </div>
+        </section>
+
+
+
+                <!-- The Modal for API Key Request (hidden by default) -->
+        <div id="api-request-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="request-api-section-modal">
+                    <h2 class="light-text">Fill out the form below to request your API Key</h2>
+                    <div class="api-form-wrapper">
+                        <form id="api-key-request-form-modal" name="api-key-request-modal" method="POST" netlify action="/thank-you">
+                            <div class="form-group">
+                                <label for="work-email-modal" class="light-text">What's your work email? *</label>
+                                <input type="email" id="work-email-modal" name="work-email" placeholder="Enter your company email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="full-name-modal" class="light-text">Name *</label>
+                                <input type="text" id="full-name-modal" name="full-name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number-modal" class="light-text">Phone *</label>
+                                <input type="tel" id="phone-number-modal" name="phone-number" placeholder="e.g., +1 (555) 123-4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="legal-company-name-modal" class="light-text">What is the legal name of your company?</label>
+                                <input type="text" id="legal-company-name-modal" name="legal-company-name" placeholder="Enter your company name, if applicable.">
+                            </div>
+                            <div class="form-group">
+                                <label for="plan-to-use-modal" class="light-text">Please explain how you plan to use the Culinary Compass API: *</label>
+                                <textarea id="plan-to-use-modal" name="plan-to-use" placeholder="Enter your response" required></textarea>
+                            </div>
+                            <div class="form-group radio-group">
+                                <label class="light-text">What best describes you? *</label>
+                                <div>
+                                    <input type="radio" id="individual-modal" name="description-modal" value="individual" required>
+                                    <label for="individual-modal" class="light-text">Individual</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="pre-launch-modal" name="description-modal" value="pre-launch" required>
+                                    <label for="pre-launch-modal" class="light-text">Pre Launch Company</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="scaling-modal" name="description-modal" value="scaling" required>
+                                    <label for="scaling-modal" class="light-text">Scaling Company</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="enterprise-modal" name="description-modal" value="enterprise" required>
+                                    <label for="enterprise-modal" class="light-text">Enterprise</label>
+                                </div>
+                            </div>
+                            <div class="form-group recaptcha-placeholder">
+                                <!-- reCAPTCHA placeholder - Actual integration would involve a script -->
+                                <!-- <div style="background-color: var(--input-bg-dark); border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.2); height: 78px; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.5); font-size: 0.9em;">
+                                    <p>I'm not a robot (reCAPTCHA placeholder)</p>
+                                </div> -->
+                                <!-- <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                </div> -->
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn form-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LETSY INCORPORATED. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Redefining Culinary Intelligence</p>
+            <p class="text-sm text-gray-400">Toronto, Ontario, Canada</p>
+            <p class="text-sm mt-2"><a href="privacy.html" class="active">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Ensure common scripts are linked -->
+</body>
+</html>

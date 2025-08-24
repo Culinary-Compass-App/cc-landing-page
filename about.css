@@ -1,0 +1,212 @@
+/* Import global styles from the main stylesheet */
+@import url("style.css");
+
+/* ------------------------------------------- */
+/* About Page Specific Overrides and Additions */
+/* ------------------------------------------- */
+
+/* Adjustments for the About Page Hero Section */
+.about-hero {
+    min-height: 50vh; /* Make the hero section a bit shorter than the landing page hero */
+    padding: 8rem 2rem; /* Consistent padding */
+    display: flex; /* Use flex to center content */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensure text is centered within the hero */
+}
+
+.about-hero .tagline {
+    font-size: 1.6em; /* Slightly larger tagline for impact */
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.about-hero h1 {
+    font-size: 3.8em; /* Adjusted headline size for the about page hero */
+    margin-bottom: 1.5rem;
+    max-width: 900px; /* Constrain width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color-light);
+}
+
+.about-hero .hero-subtext {
+    font-size: 1.5em; /* Adjusted subtext size */
+    max-width: 850px; /* Constrain width for readability */
+    margin: 1rem auto 0;
+    line-height: 1.5;
+    color: var(--text-color-light-secondary); /* Ensure good contrast */
+}
+
+/* New: Mission and Vision Two-Column Layout */
+.mission-vision-container {
+    padding: 6rem 2rem; /* Consistent section padding */
+    background-color: var(--background-light); /* Light background for this section */
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 3rem; /* Space between columns */
+    max-width: 1200px; /* Constrain content width */
+    margin: 0 auto;
+    text-align: left; /* Align text within columns */
+}
+
+.mission-block, .vision-block {
+    padding: 2.5rem; /* Internal padding for each block */
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-block {
+    background-color: #fff; /* White background for mission */
+    border-top: 5px solid var(--primary-color); /* Brand accent */
+}
+
+.vision-block {
+    background-color: var(--secondary-color); /* Dark background for vision */
+    color: var(--text-color-light); /* Light text on dark background */
+    border-top: 5px solid var(--accent-color); /* Accent brand accent */
+}
+
+.vision-block h2, .vision-block .leading-paragraph {
+    color: var(--text-color-light); /* Ensure text is light in the dark block */
+}
+
+.mission-block h2, .vision-block h2 {
+    font-size: 2em; /* Consistent heading size for blocks */
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+/* Specific styling for the API details list in the "Our API" section */
+.api-details-list {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    max-width: 850px; /* Keep consistent with leading paragraphs */
+    margin: 3rem auto; /* Center the list and provide vertical spacing */
+    text-align: left; /* Keep list items left-aligned for readability */
+    display: grid; /* Use grid for a clean, spaced layout */
+    grid-template-columns: 1fr; /* Stack items by default */
+    gap: 1.5rem; /* Space between list items */
+}
+
+.api-details-list li {
+    display: flex; /* Use flex to align icon and text */
+    align-items: flex-start; /* Align text from the top if it wraps */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--text-color-dark); /* Default text color for light section */
+    background-color: #ffffff; /* White background for list items */
+    padding: 1.5rem 2rem; /* Padding inside each list item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.api-details-list li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.api-details-list li .ph {
+    font-size: 2em; /* Larger icons for readability in the list */
+    color: var(--primary-color); /* Use primary brand color for icons */
+    margin-right: 1rem;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    width: 32px; /* Fixed width for consistent alignment */
+    text-align: center; /* Center the icon itself */
+}
+
+.api-details-list li strong {
+    color: var(--secondary-color); /* Highlight strong text within list items */
+}
+
+/* Specific styling for the join-us-cta section on the about page */
+#join-us-cta {
+    padding: 8rem 0; /* Ensure generous padding for CTA */
+}
+
+#join-us-cta h2 {
+    font-size: 3em;
+    margin-bottom: 1.5rem;
+}
+
+#join-us-cta .leading-paragraph {
+    font-size: 1.4em;
+    margin-bottom: 3.5rem;
+    color: var(--text-color-light-secondary);
+}
+
+/* Mobile Responsiveness for About Page */
+@media (max-width: 992px) {
+    .about-hero h1 {
+        font-size: 3em;
+    }
+    .about-hero .hero-subtext {
+        font-size: 1.3em;
+    }
+    /* New: Stack Mission and Vision on smaller screens */
+    .mission-vision-grid {
+        grid-template-columns: 1fr; /* Stack into a single column */
+        gap: 2rem; /* Adjust gap for stacked layout */
+    }
+    .api-details-list {
+        margin: 2rem auto;
+    }
+    .api-details-list li {
+        padding: 1.2rem 1.5rem;
+        font-size: 1em;
+    }
+    .api-details-list li .ph {
+        font-size: 1.8em;
+    }
+    #join-us-cta h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 6rem 1rem;
+        min-height: 40vh;
+    }
+    .about-hero .tagline {
+        font-size: 1.4em;
+    }
+    .about-hero h1 {
+        font-size: 2.5em;
+    }
+    .about-hero .hero-subtext {
+        font-size: 1.1em;
+    }
+    .api-details-list li {
+        flex-direction: column; /* Stack icon and text on very small screens */
+        align-items: center; /* Center items when stacked */
+        text-align: center; /* Center text when stacked */
+    }
+    .api-details-list li .ph {
+        margin-right: 0; /* Remove margin when stacked */
+        margin-bottom: 0.8rem; /* Add spacing below icon */
+    }
+    #join-us-cta h2 {
+        font-size: 2em;
+    }
+    #join-us-cta .leading-paragraph {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2em;
+    }
+    .about-hero .hero-subtext {
+        font-size: 1em;
+    }
+    .api-details-list li {
+        padding: 1rem;
+    }
+}
