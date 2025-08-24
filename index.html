@@ -153,7 +153,7 @@
             <div class="container">
                 <h2 class="light-text">Fill out the form below to request your API Key</h2>
                 <div class="api-form-wrapper">
-                    <form id="api-key-request-form-bottom" name="api-key-request-bottom" method="POST" netlify action="/thank-you">
+                    <form id="api-key-request-form-bottom" name="api-key-request-bottom" method="POST" netlify action="/thank-you" data-netlify-recaptcha="true">
                         <div class="form-group">
                             <label for="work-email-bottom" class="light-text">What's your work email? *</label>
                             <input type="email" id="work-email-bottom" name="work-email" placeholder="Enter your company email" required>
@@ -193,12 +193,7 @@
                                 <label for="enterprise-bottom" class="light-text">Enterprise</label>
                             </div>
                         </div>
-                        <div class="form-group recaptcha-placeholder">
-                            <!-- reCAPTCHA placeholder - Actual integration would involve a script -->
-                            <!-- <div style="background-color: var(--input-bg-dark); border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.2); height: 78px; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.5); font-size: 0.9em;">
-                                <p>I'm not a robot (reCAPTCHA placeholder)</p>
-                            </div> -->
-                        </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="form-group">
                             <button type="submit" class="btn form-btn">Submit</button>
                         </div>
@@ -214,7 +209,7 @@
                 <div class="request-api-section-modal">
                     <h2 class="light-text">Fill out the form below to request your API Key</h2>
                     <div class="api-form-wrapper">
-                        <form id="api-key-request-form-modal" name="api-key-request-modal" method="POST" netlify action="/thank-you">
+                        <form id="api-key-request-form-modal" name="api-key-request-modal" method="POST" netlify action="/thank-you" data-netlify-recaptcha="true">
                             <div class="form-group">
                                 <label for="work-email-modal" class="light-text">What's your work email? *</label>
                                 <input type="email" id="work-email-modal" name="work-email" placeholder="Enter your company email" required>
@@ -254,15 +249,7 @@
                                     <label for="enterprise-modal" class="light-text">Enterprise</label>
                                 </div>
                             </div>
-                            <div class="form-group recaptcha-placeholder">
-                                <!-- reCAPTCHA placeholder - Actual integration would involve a script -->
-                                <!-- <div style="background-color: var(--input-bg-dark); border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.2); height: 78px; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.5); font-size: 0.9em;">
-                                    <p>I'm not a robot (reCAPTCHA placeholder)</p>
-                                </div> -->
-                                <!-- <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-                                </div> -->
-                            </div>
+                            <div data-netlify-recaptcha="true"></div>
                             <div class="form-group">
                                 <button type="submit" class="btn form-btn">Submit</button>
                             </div>
