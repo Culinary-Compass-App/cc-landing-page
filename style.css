@@ -27,7 +27,7 @@
     --text-color-dark-secondary: #555; /* Secondary dark text, slightly subdued */
     --form-bg-dark: #1F1F1F; /* Dark background for the API form itself, similar to MealMe.ai */
     --input-bg-dark: #2F2F2F; /* Input background for dark forms */
-    --input-text-dark: #E0E0E0; /* Input text color for dark forms */
+    --input-text-dark: #000000; /* Input text color for dark forms */
     --label-text-dark: #C0C0C0; /* Label text for dark forms */
 }
 
@@ -451,7 +451,7 @@ p { font-family: 'Inter', sans-serif; }
     border-radius: 6px; /* Slightly less rounded inputs */
     border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle light border */
     background-color: var(--background-light); /* Dark input background */
-    color: var(--input-text-dark); /* Light input text */
+    color: var(--input-text-dark); 
     font-family: 'Inter', sans-serif;
     font-size: 1em;
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); /* Inner shadow for depth */
