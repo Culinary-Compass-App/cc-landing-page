@@ -3,275 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unlock customer desire with Culinary Compass's AI Taste Profile API. Deliver hyper-personalized menu suggestions for food e-commerce platforms, boosting Average Order Value and customer loyalty.">
-    <title>Culinary Compass | The First AI Taste Profile API for Food E-commerce</title>
+    <meta name="description" content="Culinary Compass API: Vector-based semantic flavor intelligence for high-volume food platforms. <50ms latency.">
+    <title>Culinary Compass | Semantic Flavor Graph API</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
-    />    <!-- Google tag (gtag.js) - Keep if needed for analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17469046361"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-17469046361');
-    </script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/dist/phosphor.js"></script>
 </head>
 
-<body>
+<body class="tech-theme">
 
     <header class="header">
-        <div class="container">
+        <div class="container nav-container">
             <div class="logo-container">
-                <!-- Using your provided dark background logo -->
-                <img src="logo1.png" alt="Culinary Compass Logo" class="logo-dark-bg">
+                <img src="logo1.png" alt="Culinary Compass Logo" class="logo-img">
             </div>
             
-            <button class="hamburger" aria-label="Toggle navigation menu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-
-            <nav class="nav">
-                <a href="#new-reality">The New Reality</a>
-                <a href="#intelligence">The Intelligence You Need</a>
-                <a href="#why-us">Why Us</a>
-                <a href="#proof">The Proof</a>
-                <a href="about.html">About Us</a> <!-- New About Us link -->
-                <!-- <a href="#apply" class="nav-button">Apply for Program</a> -->
+            
+            <nav class="nav" id="nav-menu">
+                <a href="#methodology">Methodology</a>
+                <a href="#integration">Integration</a>
+                <a href="#" class="nav-link-dim">Docs</a>
+                <a href="#pricing" class="nav-link-dim">Pricing</a>
             </nav>
+
+            <div class="nav-actions">
+                <span class="status-indicator"><span class="dot"></span> Operational</span>
+                <a href="#request-api" class="btn btn-sm">Get API Keys</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero section-dark">
-            <div class="container hero-content">
-                <p class="tagline">The Intelligence Layer for Food E-commerce.</p>
-                <h1>Your Platform Delivers Orders. We Deliver <strong>Desire</strong></h1>
-                <p class="hero-subtext">Generic recommendations leave margin on the table. Our API unlocks true customer taste, boosting every order, for every food business, on your platform.</p>
-                <a href="#request-api" class="btn">Request API Key</a>
-            </div>
-        </section>
-
-        <section id="new-reality" class="section section-light">
-            <div class="container text-center-mobile">
-                <h2>The New Reality: Why <strong>Most Popular</strong> Isn't Enough Anymore.</h2>
-                <p class="leading-paragraph">Your e-commerce platform has mastered the transaction. But the market has evolved. Today's consumer doesn't just want food; they want <strong>their</strong> food. They want to be seen, understood, and surprised by what they <strong>might</strong> truly love next from your vast culinary network.</p>
-                <div class="problem-statement-grid">
-                    <div class="problem-item">
-                        <i class="ph-bold ph-magnifying-glass-minus problem-icon"></i>
-                        <h3>The Recommendation Delusion</h3>
-                        <p>"Most Popular" or "Frequently Bought Together" are old plays. They offer minimal uplift, create menu fatigue, and tell you nothing about the <strong>individual</strong> human on the other side of the screen.</p>
-                    </div>
-                    <div class="problem-item">
-                        <i class="ph-bold ph-database problem-icon"></i>
-                        <h3>The Data Trap</h3>
-                        <p>Your systems are sitting on a goldmine of transactional data. But raw data isn't insight. Without an intelligence layer, it's just history, not the prophecy of what's next.</p>
-                    </div>
-                    <div class="problem-item">
-                        <i class="ph-bold ph-coins problem-icon"></i>
-                        <h3>The Missed Opportunity</h3>
-                        <p>Every unpersonalized scroll, every uninspired add-on, is a lost margin, a stunted Average Order Value (AOV), and a platform customer (the food business) who feels, well, unoptimized.</p>
+        <section class="hero-split">
+            <div class="container grid-2-col">
+                <div class="hero-text">
+                    <div class="badge-pill">v2.1.0-hybrid is live</div>
+                    <h1>The Semantic Flavor Graph for High-Volume Platforms.</h1>
+                    <p class="hero-subtext">Generate context-aware upsells in <strong>&lt;50ms</strong>. Built on Sentence Transformers and Neo4j—not generic collaborative filtering. Solves the cold-start problem instantly.</p>
+                    <div class="hero-btns">
+                        <a href="#request-api" class="btn btn-primary">Start Integration</a>
+                        <a href="#methodology" class="btn btn-secondary">Read Architecture</a>
                     </div>
                 </div>
-                <p class="bottom-statement">This isn't about adding another checkbox feature. It's about fundamentally transforming your platform into a smarter, more indispensable partner for the food service industry.</p>
+                
+                <div class="hero-code-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="filename">POST /v1/recommendations/smart-pair</span>
+                        </div>
+                        <pre><code><span class="c-key">"meta"</span>: {
+  <span class="c-key">"latency_ms"</span>: <span class="c-num">42</span>,
+  <span class="c-key">"model"</span>: <span class="c-str">"v2.1.0-hybrid"</span>
+},
+<span class="c-key">"recommendation"</span>: {
+  <span class="c-key">"item"</span>: <span class="c-str">"Truffle & Parmesan Fries"</span>,
+  <span class="c-key">"scores"</span>: {
+    <span class="c-key">"semantic_sim"</span>: <span class="c-num">0.89</span>,
+    <span class="c-key">"chem_affinity"</span>: <span class="c-num">0.98</span>
+  },
+  <span class="c-key">"reasoning"</span>: {
+    <span class="c-key">"driver"</span>: <span class="c-str">"flavor_bridge"</span>,
+    <span class="c-key">"notes"</span>: <span class="c-str">"High molecular overlap via glutamates."</span>
+  }
+}</code></pre>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="intelligence" class="section section-dark">
+        <section id="methodology" class="section-dark">
             <div class="container">
-                <h2 class="light-text text-center-mobile">The Intelligence You Need: Your Platform, Hyper-Personalized.</h2>
-                <p class="leading-paragraph light-text text-center-mobile">You built the digital storefront. We built the AI taste engine. Our API is the invisible intelligence layer that transforms your platform from a transaction facilitator into a <strong> true culinary guide.</strong>  We don't just guess what's next; we predict what's <strong>desired</strong> , dynamically.</p>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <i class="ph-bold ph-user-focus problem-icon"></i>
-                        <h3>Taste Profile API</h3>
-                        <p>Our proprietary machine learning models ingest your transactional data (fully anonymized for privacy, of course) to build a dynamic, real-time "taste profile" for <strong>each of your platform's end-customers</strong> . We go beyond surface-level history to understand individual preferences for cuisines, ingredients, flavor types, and even infer dietary leanings.</p>
+                <div class="section-header">
+                    <h2>We treat flavor as a high-dimensional vector space.</h2>
+                    <p>Standard collaborative filtering fails on new items. We analyze the food itself.</p>
+                </div>
+
+                <div class="grid-2-col align-center">
+                    <div class="tech-diagram">
+                        <img src="architecture-layers.png" alt="Culinary Compass Hybrid Architecture Layers" class="diagram-img shadow-lg">
                     </div>
-                    <div class="benefit-card">
-                        <i class="ph-bold ph-magic-wand problem-icon"></i>
-                        <h3>Dynamic Menu Suggestions</h3>
-                        <p>With a simple API call, your platform can deliver hyper-personalized recommendations directly into the ordering flow: Contextual Upsells, Personalized Discovery, and Smart Pairing that perfectly complement the main order.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="ph-bold ph-plugs-connected problem-icon"></i>
-                        <h3>Seamless Integration</h3>
-                        <p>Designed by ML engineers for product teams like yours. Our RESTful API comes with clear, comprehensive documentation and dedicated support, making integration a strategic advantage, not a development headache.</p>
+                    <div class="tech-content">
+                        <div class="tech-item">
+                            <h3><i class="ph ph-cube"></i> 1. Ingestion & Vectorization</h3>
+                            <p>We use <strong>all-MiniLM-L6-v2</strong> transformers to convert menu text into 384-dimensional vector embeddings. The model understands "Guanciale" contextually without purchase history.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3><i class="ph ph-graph"></i> 2. The Flavor Graph</h3>
+                            <p>Vectors are mapped against a <strong>Neo4j Graph Database</strong> containing validated chemical pairings. We traverse edges to find non-obvious, high-margin pairings.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3><i class="ph ph-lightning"></i> 3. < 50ms Inference</h3>
+                            <p>Pre-computed embeddings stored in memory. The final output is a weighted score of semantic similarity + chemical affinity.</p>
+                        </div>
                     </div>
                 </div>
-                <p class="bottom-statement light-text">This is not a bolt-on. This is an upgrade to your platform's core intelligence, making it smarter, stickier, and exponentially more valuable to every food business you serve.</p>
             </div>
         </section>
 
-        <section id="why-us" class="section section-light">
-            <div class="container text-center-mobile">
-                <h2>Why Us? The "Build vs. Buy" Reckoning.</h2>
-                <p class="leading-paragraph">You <strong> could</strong>  build this in-house. But the strategic question isn't <strong> can</strong>  you, but <strong> should</strong>  you?</p>
-                <div class="different-grid">
-                    <div class="different-card">
-                        <i class="ph-bold ph-calculator problem-icon"></i>
-                        <h3>The True Cost of Building</h3>
-                        <p>Building and <strong> maintaining</strong>  a state-of-the-art, dynamic ML recommendation engine requires a specialized team, constant data pipeline management, continuous model retraining, and a robust A/B testing infrastructure.</p>
-                    </div>
-                    <div class="different-card">
-                        <i class="ph-bold ph-target problem-icon"></i>
-                        <h3>Specialization vs. Generalization</h3>
-                        <p>Your core business is the e-commerce platform. Our core business is advanced, food-specific machine learning. We are singularly focused on perfecting culinary intelligence, learning from diverse data points across multiple integrations.</p>
-                    </div>
-                    <div class="different-card">
-                        <i class="ph-bold ph-lightning problem-icon"></i>
-                        <h3>Speed to Market</h3>
-                        <p>Integrating our battle-tested API is a matter of weeks of focused effort for your team. Building this yourself is months, likely quarters, of development. Your food service clients need this cutting-edge intelligence <strong> now</strong> .</p>
-                    </div>
-                </div>
-                <p class="bottom-statement">We are your <strong> dedicated AI lab</strong> , providing market-leading personalization without the overhead. We give you a powerful, defensible feature, instantly.</p>
-            </div>
-        </section>
-
-        <section id="proof" class="section section-dark cta-section">
+        <section class="section-light">
             <div class="container">
-                <h2 class="light-text">The Proof: Your Platform, More Profitable.</h2>
-                <p class="light-text leading-paragraph">This isn't about futuristic promises. It's about tangible impact, measured in the metrics that matter most to you and your food service clients.</p>
-                <ul class="impact-list">
-                    <li><i class="ph-bold ph-trend-up problem-icon" alt="AOV Increase Icon"></i> <strong>Average Order Value (AOV) Boost:</strong> Consistently deliver personalized upsells and cross-sells that genuinely resonate, increasing the value of every single order placed through your platform.</li>
-                    <li><i class="ph-bold ph-heartbeat problem-icon" alt="CLTV Increase Icon"></i> <strong>Enhanced Customer Lifetime Value (CLTV):</strong> Delightful, personalized ordering experiences foster deeper customer loyalty. Your platform becomes indispensable because it <strong> understands</strong>  the consumer, leading to more frequent purchases and stronger retention.</li>
-                    <li><i class="ph-bold ph-star problem-icon" alt="Retention Increase Icon"></i> <strong>Superior Food Service Client Retention:</strong> Equip your food business clients (restaurants, caterers, meal kits) with a powerful competitive edge, directly helping them boost their profits and customer satisfaction through your platform, making your service more valuable and sticky.</li>
-                </ul>
-            </div>
-        </section>
-
-
-        <!-- The VISIBLE Request API Key Section at the bottom -->
-        <section id="request-api" class="section section-dark request-api-section">
-            <div class="container">
-                <h2 class="light-text">Fill out the form below to request your API Key</h2>
-                <div class="api-form-wrapper">
-                    <form id="api-key-request-form-bottom" name="api-key-request-bottom" method="POST" netlify action="/thank-you" data-netlify-recaptcha="true">
-                        <div class="form-group">
-                            <label for="work-email-bottom" class="light-text">What's your work email? *</label>
-                            <input type="email" id="work-email-bottom" name="work-email" placeholder="Enter your company email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="full-name-bottom" class="light-text">Name *</label>
-                            <input type="text" id="full-name-bottom" name="full-name" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone-number-bottom" class="light-text">Phone *</label>
-                            <input type="tel" id="phone-number-bottom" name="phone-number" placeholder="e.g., +1 (555) 123-4567" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="legal-company-name-bottom" class="light-text">What is the legal name of your company?</label>
-                            <input type="text" id="legal-company-name-bottom" name="legal-company-name" placeholder="Enter your company name, if applicable.">
-                        </div>
-                        <div class="form-group">
-                            <label for="plan-to-use-bottom" class="light-text">Please explain how you plan to use the Culinary Compass API: *</label>
-                            <textarea id="plan-to-use-bottom" name="plan-to-use" placeholder="Enter your response" required></textarea>
-                        </div>
-                        <div class="form-group radio-group">
-                            <label class="light-text">What best describes you? *</label>
-                            <div>
-                                <input type="radio" id="individual-bottom" name="description-bottom" value="individual" required>
-                                <label for="individual-bottom" class="light-text">Individual</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="pre-launch-bottom" name="description-bottom" value="pre-launch" required>
-                                <label for="pre-launch-bottom" class="light-text">Pre Launch Company</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="scaling-bottom" name="description-bottom" value="scaling" required>
-                                <label for="scaling-bottom" class="light-text">Scaling Company</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="enterprise-bottom" name="description-bottom" value="enterprise" required>
-                                <label for="enterprise-bottom" class="light-text">Enterprise</label>
-                            </div>
-                        </div>
-                        <div data-netlify-recaptcha="true"></div>
-                        <div class="form-group">
-                            <button type="submit" class="btn form-btn">Submit</button>
-                        </div>
-                    </form>
+                <div class="section-header text-center">
+                    <h2>See the Lift.</h2>
+                    <p>Moving from "Most Popular" to "Semantic Compatibility" drives a 4x revenue lift on attachments.</p>
                 </div>
-            </div>
-        </section>
+                
+                <div class="dashboard-preview">
+                    <img src="hero-dashboard.png" alt="Culinary Compass Semantic Explorer UI" class="dashboard-img">
+                </div>
 
-        <!-- The Modal for API Key Request (hidden by default) -->
-        <div id="api-request-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <div class="request-api-section-modal">
-                    <h2 class="light-text">Fill out the form below to request your API Key</h2>
-                    <div class="api-form-wrapper">
-                        <form id="api-key-request-form-modal" name="api-key-request-modal" method="POST" netlify action="/thank-you" data-netlify-recaptcha="true">
-                            <div class="form-group">
-                                <label for="work-email-modal" class="light-text">What's your work email? *</label>
-                                <input type="email" id="work-email-modal" name="work-email" placeholder="Enter your company email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="full-name-modal" class="light-text">Name *</label>
-                                <input type="text" id="full-name-modal" name="full-name" placeholder="Enter your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone-number-modal" class="light-text">Phone *</label>
-                                <input type="tel" id="phone-number-modal" name="phone-number" placeholder="e.g., +1 (555) 123-4567" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="legal-company-name-modal" class="light-text">What is the legal name of your company?</label>
-                                <input type="text" id="legal-company-name-modal" name="legal-company-name" placeholder="Enter your company name, if applicable.">
-                            </div>
-                            <div class="form-group">
-                                <label for="plan-to-use-modal" class="light-text">Please explain how you plan to use the Culinary Compass API: *</label>
-                                <textarea id="plan-to-use-modal" name="plan-to-use" placeholder="Enter your response" required></textarea>
-                            </div>
-                            <div class="form-group radio-group">
-                                <label class="light-text">What best describes you? *</label>
-                                <div>
-                                    <input type="radio" id="individual-modal" name="description-modal" value="individual" required>
-                                    <label for="individual-modal" class="light-text">Individual</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="pre-launch-modal" name="description-modal" value="pre-launch" required>
-                                    <label for="pre-launch-modal" class="light-text">Pre Launch Company</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="scaling-modal" name="description-modal" value="scaling" required>
-                                    <label for="scaling-modal" class="light-text">Scaling Company</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="enterprise-modal" name="description-modal" value="enterprise" required>
-                                    <label for="enterprise-modal" class="light-text">Enterprise</label>
-                                </div>
-                            </div>
-                            <div data-netlify-recaptcha="true"></div>
-                            <div class="form-group">
-                                <button type="submit" class="btn form-btn">Submit</button>
-                            </div>
-                        </form>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-val">42ms</span>
+                        <span class="metric-label">Avg. API Latency</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-val">Zero</span>
+                        <span class="metric-label">Cold-Start Issues</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-val">Hybrid</span>
+                        <span class="metric-label">Vector + Graph Logic</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <section class="section-dark border-top">
+            <div class="container text-center max-w-800">
+                <h2>Built by Data Scientists, Not Marketers.</h2>
+                <p class="leading-paragraph">Culinary Compass is an engineering-first operation. Led by an MSc Statistician. We don't sell "magic AI." We sell clean, containerized Python code that integrates into your checkout flow in minutes.</p>
+                <div class="stack-row">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>PyTorch</span>
+                    <span>Neo4j</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-light">
+            <div class="container">
+                <h2 class="text-center">Start Integration</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Developer Sandbox</h3>
+                        <div class="price">$0 <span class="period">/ month</span></div>
+                        <ul>
+                            <li>50 API calls / day</li>
+                            <li>Full Documentation</li>
+                            <li>Community Support</li>
+                        </ul>
+                        <a href="#request-api" class="btn-secondary-outline">Get Sandbox Key</a>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="tag">Production Pilot</div>
+                        <h3>Early Adopter</h3>
+                        <div class="price">$49 <span class="period">/ month</span></div>
+                        <ul>
+                            <li>25,000 API calls / month</li>
+                            <li>< 50ms Latency SLA</li>
+                            <li><strong>Direct Engineer Support</strong></li>
+                            <li>Custom Model Tuning</li>
+                        </ul>
+                        <a href="#request-api" class="btn-primary-filled">Request Access</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="request-api" class="section-dark">
+            <div class="container max-w-600">
+                <h2 class="text-center">Request API Access</h2>
+                <form name="api-request" method="POST" data-netlify="true" class="tech-form">
+                    <div class="form-group">
+                        <label>Work Email</label>
+                        <input type="email" name="email" required placeholder="dev@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" name="company" placeholder="Legal entity name">
+                    </div>
+                    <div class="form-group">
+                        <label>Use Case</label>
+                        <select name="use-case">
+                            <option>Multi-Vendor Marketplace</option>
+                            <option>Meal Kit Service</option>
+                            <option>Ghost Kitchen</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Request Key</button>
+                </form>
+            </div>
+        </section>
+        <section class="section-dark border-top">
+            <div class="container text-center">
+                <p class="section-label">Supported By</p>
+                <div class="logo-row">
+                    <img src="logo-altitude.png" alt="Altitude Accelerator" class="partner-logo">
+                    <img src="logo-sheridan.png" alt="Sheridan RISE" class="partner-logo">
+                    <img src="logo-boundless.png" alt="Boundless Accelerator" class="partner-logo">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Culinary Compass Inc. All rights reserved.</p>
-            <p class="text-sm text-gray-400 mt-2">Redefining Culinary Intelligence</p>
-            <p class="text-sm text-gray-400">Toronto, Ontario, Canada</p>
-            <p class="text-sm mt-2"><a href="privacy.html" class="active">Privacy Policy</a></p>
+            <p>&copy; 2025 Culinary Compass Inc. | Toronto, Canada</p>
+            <div class="footer-links">
+                <a href="#">API Status</a>
+                <a href="#">Documentation</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Script.js (hamburger menu, smooth scroll, scroll animations) should be linked here -->
     <script src="script.js"></script>
-
 </body>
 </html>

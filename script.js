@@ -51,24 +51,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav');
 
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-        hamburger.classList.toggle('is-active');
-    });
-
-    document.querySelectorAll('.nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('open');
-            hamburger.classList.remove('is-active');
-            // This handles general smooth scrolling for nav links
-            if (link.getAttribute('href').startsWith('#') && link.getAttribute('href') !== '#request-api') {
-                document.querySelector(link.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-            // For the Request API key link, the event listener above already handles modal + scroll
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
         });
-    });
+
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                // This handles general smooth scrolling for nav links
+                if (link.getAttribute('href').startsWith('#') && link.getAttribute('href') !== '#request-api') {
+                    document.querySelector(link.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                // For the Request API key link, the event listener above already handles modal + scroll
+            });
+        });
+    }
 
     // Original smooth scroll for hash links that are NOT the API request trigger
     // (already mostly covered by the specific handler for apiTriggerButtons)
